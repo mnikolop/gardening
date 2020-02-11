@@ -1,28 +1,41 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:gardening/componends/sunCoverage.dart';
-import 'package:gardening/componends/watering.dart';
-import 'package:gardening/componends/placement.dart';
+import 'package:gardening/models/sun.dart';
+import 'package:gardening/models/water.dart';
+import 'package:gardening/models/planted.dart';
+import 'package:gardening/models/fertaliser.dart';
+import 'package:gardening/models/produces.dart';
+import 'package:gardening/models/zones.dart';
+
 
 class Plant {
   int id;
-  String emoji;
+  String icon;
   String name;
-  bool indoor;
-  Watering watering; 
-  SunCoverage sun;
-  Placement placement;
+  Water water;
+  Sun sun;
+  Produces produces;
+  Fertaliser fertaliser;
+  bool coldHardy;
+  List<Zones> zones;
+  Planted planted;
   
-  Plant(int id, String emoji, String name, bool indoor, Watering watering, SunCoverage sun, Placement placement){
+  Plant(int id, String icon, String name, Water water, Sun sun, Produces produces, Fertaliser fertaliser, bool coldHardy, List<Zones> zones, Planted planted){
     this.id;
-    this.emoji;
+    this.icon;
     this.name;
-    this.indoor;
-    this.watering; 
-    this.sun;
-    this.placement;
+    this.water;
+    this.sun; 
+    this.produces;
+    this.fertaliser;
+    this.coldHardy;
+    this.zones;
+    this.planted;
   }
 
-  String get displayname => '${this.emoji} ${this.name}';
+  String get displayname => '${this.icon} ${this.name}';
+}
+
+class Produces {
 }

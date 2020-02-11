@@ -2,24 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 
-class Watering extends StatefulWidget {
-  final Watering watering;
+class Fertaliser extends StatefulWidget {
+  final Fertaliser fertaliser;
   final int frequency;
   final String timeWindow;
   final int amount;
 
 
-  Watering(
-      {this.watering,
+  Fertaliser(
+      {this.fertaliser,
       this.frequency,
       this.timeWindow,
       this.amount});
 
   @override
-  _WateringState createState() => _WateringState();
+  _FertaliserState createState() => _FertaliserState();
 }
 
-class _WateringState extends State<Watering> {
+class _FertaliserState extends State<Fertaliser> {
   @override
   Widget build(BuildContext context) {
 // TODO fix this build
