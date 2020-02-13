@@ -1,22 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+class Sun{
 
+String strenght;
+String direction;
 
-class Sun extends StatefulWidget {
-  final Sun sun;
+  Sun(String strength, String direction){
+    this.strenght;
+    this.direction;
 
-
-  Sun(
-      {this.sun
-      });
-
-  @override
-  _SunState createState() => _SunState();
-}
-
-class _SunState extends State<Sun> {
-  @override
-  Widget build(BuildContext context) {
-// TODO fix this build
   }
 }

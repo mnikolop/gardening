@@ -1,22 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'dart:ffi';
 
 
-class Windows extends StatefulWidget {
-  final Windows windows;
+class Window{
+  String orientation;
+  Float sunCoverage;
 
-
-  Windows(
-      {this.windows
-      });
-
-  @override
-  _WindowsState createState() => _WindowsState();
-}
-
-class _WindowsState extends State<Windows> {
-  @override
-  Widget build(BuildContext context) {
+  Window(String orientation, Float sunCoverage){
+    this.orientation;
+    this.sunCoverage;
 
   }
 }

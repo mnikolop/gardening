@@ -1,9 +1,7 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
 import 'package:gardening/models/sun.dart';
 import 'package:gardening/models/water.dart';
-import 'package:gardening/models/planted.dart';
 import 'package:gardening/models/fertaliser.dart';
 import 'package:gardening/models/produces.dart';
 import 'package:gardening/models/zones.dart';
@@ -19,9 +17,9 @@ class Plant {
   Fertaliser fertaliser;
   bool coldHardy;
   List<Zones> zones;
-  Planted planted;
+  String planted; //Indoors, Outdoors.ground, Outdoors.pot
   
-  Plant(int id, String icon, String name, Water water, Sun sun, Produces produces, Fertaliser fertaliser, bool coldHardy, List<Zones> zones, Planted planted){
+  Plant(int id, String icon, String name, Water water, Sun sun, Produces produces, Fertaliser fertaliser, bool coldHardy, List<Zones> zones, String planted){
     this.id;
     this.icon;
     this.name;
@@ -35,7 +33,4 @@ class Plant {
   }
 
   String get displayname => '${this.icon} ${this.name}';
-}
-
-class Produces {
 }
