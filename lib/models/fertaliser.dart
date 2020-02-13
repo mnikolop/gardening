@@ -5,8 +5,8 @@ class Fertaliser{
 
 
   Fertaliser(int frequency, String timeWindow, int amount){
-    this.frequency;
-    this.timeWindow;
-    this.amount;
+    this.frequency = frequency;
+    this.timeWindow = timeWindow;
+    this.amount = amount;
   }
 }

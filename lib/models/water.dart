@@ -1,12 +1,10 @@
 class Water{
   int frequency;
-  String timeWindow;
   int amount;
 
 
-  Water(int frequency, String timeWindow, int amount){
-    this.frequency;
-    this.timeWindow;
-    this.amount;
+  Water(int frequency, int amount){
+    this.frequency = frequency;
+    this.amount = amount;
   }
 }

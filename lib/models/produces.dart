@@ -1,9 +1,9 @@
 class Produces {
-  List<String> Blooming; //list of months
+  List<String> blooming; //list of months
   bool fruit;
 
-  Produces(List<String> Blooming, bool fruit){
-    this.Blooming;
-    this.fruit;
+  Produces(List<String> blooming, bool fruit){
+    this.blooming = [];
+    this.fruit = false;
   }
 }

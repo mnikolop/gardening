@@ -14,22 +14,22 @@ class Plant {
   Water water;
   Sun sun;
   Produces produces;
-  Fertaliser fertaliser;
+  List<Fertaliser> fertaliser;
   bool coldHardy;
   List<Zones> zones;
   String planted; //Indoors, Outdoors.ground, Outdoors.pot
   
-  Plant(int id, String icon, String name, Water water, Sun sun, Produces produces, Fertaliser fertaliser, bool coldHardy, List<Zones> zones, String planted){
-    this.id;
-    this.icon;
-    this.name;
-    this.water;
-    this.sun; 
-    this.produces;
-    this.fertaliser;
-    this.coldHardy;
-    this.zones;
-    this.planted;
+  Plant(int id, String icon, String name, Water water, Sun sun, Produces produces, List<Fertaliser> fertaliser, bool coldHardy, List<Zones> zones, String planted){
+    this.id = id;
+    this.icon = icon;
+    this.name = name;
+    this.water = water;
+    this.sun = sun; 
+    this.produces = produces;
+    this.fertaliser = [];
+    this.coldHardy = false;
+    this.zones = [];
+    this.planted = "Indoors";
   }
 
   String get displayname => '${this.icon} ${this.name}';

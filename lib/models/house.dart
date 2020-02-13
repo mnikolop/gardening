@@ -9,8 +9,8 @@ class House {
   List<Window> windows;
   
   House(Geolocation geolocation, List<Window> windows){
-    this.geolocation;
-    this.windows;
+    this.geolocation = geolocation;
+    this.windows = [];
   }
 
 }
